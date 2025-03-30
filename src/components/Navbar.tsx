@@ -2,8 +2,6 @@
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, ChevronDown } from "lucide-react";
-import WalletConnect from "./WalletConnect";
-
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -43,8 +41,7 @@ const Navbar = () => {
           </div>
           
           <div className="hidden md:flex items-center space-x-4">
-            <WalletConnect buttonClassName="border-astral-500 text-astral-300 hover:bg-astral-700/20 bg-transparent border py-2 px-4 rounded-lg" />
-            <Button 
+          <Button 
               className="bg-astral-500 hover:bg-astral-600"
               onClick={scrollToWaitlist}
             >
@@ -93,10 +90,7 @@ const Navbar = () => {
               Contact
             </a>
             <div className="pt-4 space-y-3">
-              <div className="mb-3">
-                <WalletConnect buttonClassName="w-full border-astral-500 text-astral-300 hover:bg-astral-700/20 bg-transparent border py-2 px-4 rounded-lg" />
-              </div>
-              <Button 
+       <Button 
                 className="w-full bg-astral-500 hover:bg-astral-600"
                 onClick={() => {
                   scrollToWaitlist();
